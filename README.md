@@ -18,13 +18,13 @@ The dashboards enable stakeholders to monitor revenue performance, product deman
 
 The goal of this project is to answer key business questions such as:
 
-• How is overall revenue trending across quarters? 
-• Which product categories generate the highest revenue?
-• How do online and store sales channels compare?
-• Which regions contribute the most to total revenue?
-• Effect of marketing strategies on revenue and customer retention ?
-• Which products have inventory risks such as overstock or stockouts?
-• What demand signals exist for upcoming products?
+- How is overall revenue trending across quarters?
+- Which product categories generate the highest revenue?
+- How do online and store sales channels compare?
+- Which regions contribute the most to total revenue?
+- Effect of marketing strategies on revenue and customer retention ?
+- Which products have inventory risks such as overstock or stockouts?
+- What demand signals exist for upcoming products?
 
 ---
 
@@ -85,6 +85,77 @@ The Strategic Dashboard provides leadership with a high-level overview of busine
 - Quarters with more marketing spend show more revenue generation.
 - Customer Retention is maximum till the second month of the campaign.
 
+---
 
+## Operational Dashboard
 
+The Operational Dashboard focuses on product performance and inventory management.
 
+<p align="center"> <img src="docs/screenshots/Operational_Dashboard_1.png" width="900"> </p>
+Key Visualizations
+
+**Key Metrics**
+
+- Inventory Level
+- Stock Turnover
+- Inventory Risk
+- Online Searches, Wishlists, Pre-Orders
+
+**Key Visualizations**
+
+- Inventory Snapshot Table
+- Demand Signal for upcoming Products
+- Supplier Information
+
+**Main Insights**
+
+- Trailbaze Jackets and Ultra Move shorts have high Inventory stock but low sales (Low Inventory Risk). 
+- FlexFit Leggings have low inventory but high sales (Inventory Risk very high)
+- Among upcoming products Therma Leggings has the most demand as indicated by pre orders and wishlist additions.
+- Online Searches is directly proportional to product demand.
+
+---
+
+## Key DAX Measures Implemented
+
+Several DAX calculations were implemented to derive business metrics, including:
+
+- Sales YTD
+- Purchase Count
+- Inventory Turnover
+- Inventory Risk Classification
+- Average Product Rating
+- Revenue by Sales Channel
+- Budget vs Actual Variance
+
+These measures enable deeper insights into sales performance, customer activity, and inventory efficiency.
+
+---
+
+##  ⚙️Tech Stack
+
+- Power BI
+- Power Query
+- DAX
+- Excel
+
+---
+
+## 📂Repository Structure
+
+```
+Retail-Sales---Operations-Analytics-Dashboard/
+│
+├── datasets/                                        # Raw dataset used for the project 
+│
+├── docs/                                            # Project documentation and architecture details
+│      ├── dashboard                                 # file shows the project's architecture
+│                ├── modern_Analytics_Dashboard      # file for the data flow diagram
+│      ├── screenshots                               # file for data models (star schema)
+│                ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+│
+├── README.md                                        # Project overview and instructions
+
+```
+
+---
